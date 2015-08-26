@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sandeepbhambad.easysolutiondemo.activities.Privacy">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryText"
+        android:text="@string/title_privacy"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contentPara1"
+        android:textSize="14sp"
+        android:textColor="@color/colorSecondaryText"
+        android:text="@string/title_privacy_para1"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contentPara2"
+        android:textSize="14sp"
+        android:textColor="@color/colorSecondaryText"
+        android:text="@string/title_privacy_para2"
+        android:layout_below="@+id/contentPara1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/contentPara3"
+    android:textSize="14sp"
+    android:textColor="@color/colorSecondaryText"
+    android:text="@string/title_privacy_para3"
+    android:layout_below="@+id/contentPara2"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contentPara4"
+        android:textSize="14sp"
+        android:textColor="@color/colorSecondaryText"
+        android:text="@string/title_privacy_para4"
+        android:layout_below="@+id/contentPara3"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+</RelativeLayout>

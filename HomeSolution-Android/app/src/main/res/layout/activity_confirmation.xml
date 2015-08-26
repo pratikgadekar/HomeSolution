@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sandeepbhambad.easysolutiondemo.activities.Confirmation">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar" />
+
+    <TextView
+        android:id="@+id/confirmationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/confirmation_text1"
+        android:textColor="@color/colorSecondaryText"
+
+        />
+
+    <TextView
+        android:id="@+id/confirmationText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmationText"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="@string/confirmation_text2"
+        android:textColor="@color/colorSecondaryText"
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/phoneNumberView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmationText2"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/countryCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/country_number"
+            android:textColor="@color/colorPrimaryText"
+
+
+            />
+
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+
+            android:textColor="@color/colorPrimaryText"
+
+
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/smsCode"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneNumberView"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+
+        android:hint="@string/sms_code"
+        android:textSize="14dp"
+        android:textColor="@color/colorSecondaryText"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="130dp"
+        android:maxLength="4"
+
+        />
+
+
+    <TextView
+        android:id="@+id/resendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/smsCode"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/resend_code"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14dp"
+
+
+        />
+
+
+</RelativeLayout>

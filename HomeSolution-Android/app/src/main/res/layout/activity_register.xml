@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sandeepbhambad.easysolutiondemo.activities.Register"
+    android:background="@color/white">
+
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/introPager"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/introPager"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/indicator"
+       >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/solid_circle"
+            android:id="@+id/inroIndicatior1"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/hollow_circle"
+            android:id="@+id/inroIndicatior2"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/hollow_circle"
+            android:id="@+id/inroIndicatior3"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/hollow_circle"
+            android:id="@+id/inroIndicatior4"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Proceed with your phone number"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:id="@+id/phoneText"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/phoneText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/customborder"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:id="@+id/phoneView"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91"
+            android:textSize="18dp"
+            android:textColor="@color/colorSecondaryText"/>
+
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Mobile Number"
+            android:background="@null"
+            android:textSize="18sp"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/colorSecondaryText"
+            android:inputType="number"
+            android:id="@+id/phoneNumber"
+            android:maxLength="10"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arrow"
+            android:id="@+id/submit"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="By using Easy solution, you agree to our"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/phoneView"
+        android:textColor="@color/colorSecondaryText"
+        android:layout_marginTop="10dp"
+        android:id="@+id/termsHeader"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Privacy and Terms"
+        android:id="@+id/privacyText"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/termsHeader"
+        android:textColor="@color/colorPrimary"
+       />
+
+</RelativeLayout>
