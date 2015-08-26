@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "HomeSolution": {
+      "applicationId": "ebuoMBhbtTmhzV9LyvKusjk2AtyDK7Yc6QjPYc95"
+    },
+    "_default": {
+      "link": "HomeSolution"
+    }
+  }
+}
